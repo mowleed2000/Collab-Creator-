@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creator Onboarding | CollabCreate</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .onboarding-container {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .onboarding-header {
+            margin-bottom: 3rem;
+        }
+
+        .header-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(to right, #fff, #a0a0a0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .header-subtitle {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Tally Embed Container */
+        .tally-embed-container {
+            width: 100%;
+            height: 800px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .nav {
+            padding: 1.5rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Simple Nav -->
+    <nav class="nav">
+        <a href="index.html" class="logo"
+            style="text-decoration: none; display: flex; align-items: center; gap: 0.5rem;">
+            <i data-lucide="zap" style="color: var(--primary-color);"></i>
+            <span style="font-weight: 800; color: #fff;">CollabCreate<span
+                    style="color: var(--primary-color);">.</span></span>
+        </a>
+    </nav>
+
+    <!-- Onboarding Section -->
+    <main class="onboarding-container">
+        <div class="onboarding-header">
+            <h1 class="header-title">Welcome to CollabCreate</h1>
+            <p class="header-subtitle">Payment successful. Let’s get to work building your creator business. Fill out
+                the quick form below so our team can capture your exact vision.</p>
+        </div>
+
+        <!-- Tally Form Embed -->
+        <div class="tally-embed-container">
+            <!-- 
+                Replace this iframe src with your actual Tally form link!
+                For example: https://tally.so/r/YOUR_FORM_ID?transparentBackground=1
+            -->
+            <iframe
+                data-tally-src="https://tally.so/embed/w4pXXm?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+                loading="lazy" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0"
+                title="Creator Onboarding"></iframe>
+        </div>
+    </main>
+
+    <!-- Tally Embed Script -->
+    <script async src="https://tally.so/widgets/embed.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
