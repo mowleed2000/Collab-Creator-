@@ -170,6 +170,54 @@
         </div>
     </section>
 
+    <!-- Built For Professionals -->
+    <section class="section portfolio bg-dark">
+        <div class="container">
+            <div class="section-header">
+                <h2>Built For Professionals</h2>
+                <p>We build premium platforms for anyone who needs to establish authority and attract clients.</p>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+                <!-- Pro Example 1 -->
+                <div class="portfolio-card reveal">
+                    <div class="portfolio-image">
+                        <img src="assets/actor_portfolio_mockup.png" alt="Creative Professional Mockup">
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-tag">Creative Professionals</div>
+                        <h3>Actors & Voice Artists</h3>
+                        <p>A sleek portfolio to host demo reels, voice clips, and headshots, complete with a direct
+                            contact system so agents and studios can instantly book you.</p>
+                    </div>
+                </div>
+                <!-- Pro Example 2 -->
+                <div class="portfolio-card reveal reveal-delay-1">
+                    <div class="portfolio-image">
+                        <img src="assets/pt_coach_mockup.png" alt="Personal Trainer Mockup">
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-tag">Fitness Coaches</div>
+                        <h3>Personal Trainers</h3>
+                        <p>A complete coaching platform to sell digital workout plans, showcase client transformations,
+                            and accept calendar bookings for online coaching.</p>
+                    </div>
+                </div>
+                <!-- Pro Example 3 -->
+                <div class="portfolio-card reveal reveal-delay-2">
+                    <div class="portfolio-image">
+                        <img src="assets/consultant_mockup.png" alt="Consultant Mockup">
+                    </div>
+                    <div class="portfolio-content">
+                        <div class="portfolio-tag">Consultants & Agencies</div>
+                        <h3>Service Providers</h3>
+                        <p>Turn your expertise into a scalable machine with clear service tiers, client testimonials,
+                            and automated discovery call flows.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- What Creators Can Sell -->
     <section class="section digital-products">
         <div class="container container-sm text-center">
@@ -325,10 +373,21 @@
                     <input type="hidden" name="_subject" value="🚨 New Lead: Someone sent their page for review!">
                     <!-- _next tells Formspree to bounce them back to your homepage instead of a blank screen -->
                     <input type="hidden" name="_next" value="http://creators.collabcreatemarketing.com">
-                    <div class="input-group">
-                        <i data-lucide="instagram"></i>
-                        <input type="text" name="Instagram_Handle" placeholder="@yourhandle" required>
+
+                    <div class="input-group" style="margin-bottom: 0.5rem; padding: 0.5rem 1rem;">
+                        <select name="Platform"
+                            style="width: 100%; background: transparent; border: none; color: #fff; font-size: 1rem; outline: none; appearance: none; -webkit-appearance: none; cursor: pointer;">
+                            <option value="Instagram" style="color: #000;">Instagram</option>
+                            <option value="TikTok" style="color: #000;">TikTok</option>
+                            <option value="YouTube" style="color: #000;">YouTube</option>
+                            <option value="X (Twitter)" style="color: #000;">X (Twitter)</option>
+                        </select>
                     </div>
+                    <div class="input-group">
+                        <i data-lucide="at-sign"></i>
+                        <input type="text" name="Username_Or_Link" placeholder="@yourhandle or Channel Link" required>
+                    </div>
+
                     <button type="submit" class="btn btn-primary btn-lg">Submit Page For Review</button>
                 </form>
             </div>
